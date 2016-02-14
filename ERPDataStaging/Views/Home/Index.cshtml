@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ERP Data Staging Area</h1>
+    <p class="lead">
+        This is a webshop for uploading data to, and view / edit the data in, our DB. <br/>
+        On the bottom of this page, there are some buttons for testing.
+    </p>
+    <p>No testing? Let's Start Here...</p>
+
+    <p>
+        <a href="http://asp.net" class="btn btn-primary btn-lg">
+            Upload CSV  &raquo;
+        </a>
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Delete all data in SQL DB, table Products.
+        </p>
+        <p><a class="btn btn-default" href="~/DelTblData">Detele it! &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Seed InMemory Data</h2>
+        <p>
+            Populate in-code Products data in SQL DB.
+        </p>
+        <p>
+            <a class="btn btn-default" href="~/SeedData">
+            Show InMem data and Insert to DB &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Process Local File</h2>
+        <p>Specify file path on web server, and import into DB.</p>
+        <p>
+            <a class="btn btn-default" href="~/ShowFile">
+            Find file and Import &raquo;
+            </a>
+        </p>
+    </div>
+</div>
